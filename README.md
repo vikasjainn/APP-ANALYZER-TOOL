@@ -1,34 +1,34 @@
-📱 Android APK Vulnerability Scanner
+# **📱 Android APK Vulnerability Scanner**
 
 A lightweight Static Application Security Testing (SAST) tool that scans Android APK files for common security vulnerabilities using static code analysis.
 
 This tool decompiles APKs using jadx and analyzes Java source code to detect insecure implementations.
 
-🚀 Features
+🚀## **Features**
 
 The scanner currently detects:
 
-🔐 Insecure Logging
+🔐 **Insecure Logging**
 
 Sensitive data written to logs (passwords, tokens, secrets)
 
-💾 Insecure Local Data Storage
+💾 **Insecure Local Data Storage**
 
 World-readable/writable modes
 
 Sensitive data stored in SharedPreferences
 
-📸 Insecure Screen Capturing
+📸 **Insecure Screen Capturing**
 
 Missing FLAG_SECURE (screenshots allowed)
 
-🌐 Malicious / Unsafe URL Loading
+🌐 **Malicious / Unsafe URL Loading**
 
 Cleartext HTTP usage
 
 Unsafe WebView URL loading
 
-🔑 Embedded Secrets
+🔑 **Embedded Secrets**
 
 Hardcoded API keys
 
@@ -36,7 +36,7 @@ Bearer tokens
 
 Stripe / Google API keys
 
-🏗️ Architecture
+🏗️ **Architecture**
 APK File
    ↓
 JADX Decompilation
@@ -55,7 +55,7 @@ Pure static pattern-based inspection
 
 File-level & line-level detection
 
-🛠️ Installation
+🛠️ **Installation**
 1️⃣ Install jadx
 
 Download from:
@@ -72,7 +72,7 @@ cd android-apk-vulnerability-scanner
 ````
 python android_sast_scanner.py app.apk
 ````
-📊 Example Output
+📊 **Example Output**
 ````
 [CRITICAL] Embedded Secrets
 Description   : Hardcoded API keys or tokens
