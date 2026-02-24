@@ -85,8 +85,8 @@ Total Findings: 2
 [HIGH] Malicious URL Loading
 Description   : Loading cleartext or untrusted URLs
 Total Findings: 1
-````
 
   [1] File : sources/com/example/web/WebActivity.java
       Line : 67
       Code : webView.loadUrl("http://example.com");
+````
