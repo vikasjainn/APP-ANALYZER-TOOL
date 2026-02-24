@@ -4,7 +4,7 @@ A lightweight Static Application Security Testing (SAST) tool that scans Android
 
 This tool decompiles APKs using jadx and analyzes Java source code to detect insecure implementations.
 
-🚀## **Features**
+🚀 **Features**
 
 The scanner currently detects:
 
